@@ -26,8 +26,19 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "iso.gemspec",
+    "data/iso-3166-1.yml",
+    "data/iso-639-1.yml",
     "lib/iso.rb",
-    "spec/iso_spec.rb",
+    "lib/iso/language.rb",
+    "lib/iso/region.rb",
+    "lib/iso/subtag.rb",
+    "lib/iso/tag.rb",
+    "locales/en.yml",
+    "spec/fixtures/base.yml",
+    "spec/lib/iso/language_spec.rb",
+    "spec/lib/iso/region_spec.rb",
+    "spec/lib/iso/subtag_spec.rb",
+    "spec/lib/iso/tag_spec.rb",
     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/tigrish/iso}

@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "iso"
   gem.homepage = "http://github.com/tigrish/iso"
   gem.license = "MIT"
-  gem.summary = %Q{A ruby implementation of ISO languages and regions and they're translation data.}
-  gem.description = %Q{A ruby implementation of ISO languages and regions and they're translation data (such as language direction, pluralization rules).}
+  gem.summary = %Q{A ruby implementation of ISO}
+  gem.description = %Q{A subset of the ISO spec implemented in ruby}
   gem.email = "chris@tigrish.com"
   gem.authors = ["Christopher Dell"]
   # dependencies defined in Gemfile
