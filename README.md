@@ -1,8 +1,6 @@
 # iso
 
-This project is a subset implementation of the ISO spec.
-
-Currently only the language and region subtags are supported - there is no plan to implement the others.
+This project is a ruby implementation of ISO 639-1 alpha2 and ISO 3166-1. It includes definitions of all two letter language and region codes.
 
 ## Languages
 
@@ -30,7 +28,7 @@ Regions are defined by **ISO 3166-1**; that is the 2 letter uppercase region cod
 	
 ## Tags
 
-The combination of a language and a region is called a Tag ::
+The combination of a language and a region is called a Tag :
 
 	> ISO::Tag.new('pt-BR')
 
@@ -42,19 +40,8 @@ The combination of a language and a region is called a Tag ::
 	  			@name="Portuguese">,
 	 		@region=#<ISO::Region:0x007fe2ba412e28
 				@code="BR",
-				@name="Brazil">> 
+				@name="Brazil">>
+				
+## I18n
 
-## Contributing to iso
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
-
-#### Copyright
-
-Copyright (c) 2012 Christopher Dell. See LICENSE.txt for further details.
-
+Language and region names are internationalized - [contribute to the I18n project directly on Locale](http://www.localeapp.com/projects/1763) for any changes.
