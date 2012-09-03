@@ -14,15 +14,16 @@ Gem::Specification.new do |s|
   s.email = %q{chris@tigrish.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
     ".rspec",
     "Gemfile",
     "Gemfile.lock",
+    "Guardfile",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "iso.gemspec",
@@ -51,21 +52,30 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<i18n>, [">= 0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.2.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
+      s.add_development_dependency(%q<guard-rspec>, [">= 0"])
+      s.add_development_dependency(%q<localeapp>, [">= 0"])
     else
+      s.add_dependency(%q<i18n>, [">= 0"])
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.2.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
+      s.add_dependency(%q<guard-rspec>, [">= 0"])
+      s.add_dependency(%q<localeapp>, [">= 0"])
     end
   else
+    s.add_dependency(%q<i18n>, [">= 0"])
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.2.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
+    s.add_dependency(%q<guard-rspec>, [">= 0"])
+    s.add_dependency(%q<localeapp>, [">= 0"])
   end
 end
 
