@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{iso}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Christopher Dell}]
@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
     "lib/iso/subtag.rb",
     "lib/iso/tag.rb",
     "locales/en.yml",
+    "locales/fr.yml",
     "spec/fixtures/base.yml",
     "spec/lib/iso/language_spec.rb",
     "spec/lib/iso/region_spec.rb",
