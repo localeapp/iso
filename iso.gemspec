@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{iso}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Christopher Dell}]
-  s.date = %q{2012-09-02}
-  s.description = %q{A ruby implementation of ISO languages and regions and they're translation data (such as language direction, pluralization rules).}
+  s.date = %q{2012-09-03}
+  s.description = %q{A subset of the ISO spec implemented in ruby}
   s.email = %q{chris@tigrish.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -26,9 +26,9 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "iso.gemspec",
     "data/iso-3166-1.yml",
     "data/iso-639-1.yml",
+    "iso.gemspec",
     "lib/iso.rb",
     "lib/iso/language.rb",
     "lib/iso/region.rb",
@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.6}
-  s.summary = %q{A ruby implementation of ISO languages and regions and they're translation data.}
+  s.summary = %q{A ruby implementation of ISO}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
