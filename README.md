@@ -44,6 +44,11 @@ The combination of a language and a region is called a Tag :
 				@code="BR",
 				@name="Brazil">>
 				
+You can check if a Tag is valid like so :
+
+  > ISO::Tag.new('pt-BR').valid? => true
+  > ISO::Tag.new('lolcat').valid? => false
+
 ## I18n
 
 Language and region names are internationalized - [contribute to the I18n project directly on Locale](http://www.localeapp.com/projects/1763) for any changes.

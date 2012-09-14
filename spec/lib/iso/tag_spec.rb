@@ -52,4 +52,26 @@ describe ISO::Tag do
       tag.subtags.last.code.should == 'CH'
     end
   end
+
+  describe "#valid?" do
+    it "returns true when a valid language is supplied" do
+      ISO::Tag.new('da').should be_valid
+    end
+
+    it "returns true when a valid language and region are supplied" do
+      ISO::Tag.new('da-AT').should be_valid
+    end
+
+    it "returns false when no code is supplied" do
+      ISO::Tag.new('').should_not be_valid
+    end
+
+    it "returns false when supplied language is invalid" do
+      ISO::Tag.new('lol').should_not be_valid
+    end
+
+    it "returns false when supplied region is invalid" do
+      ISO::Tag.new('en-lol').should_not be_valid
+    end
+  end
 end

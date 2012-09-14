@@ -15,5 +15,10 @@ module ISO
     def subtags
       [language, region].compact
     end
+
+    def valid?
+      return false if @language.nil?
+      @code.split('-').size == subtags.size
+    end
   end
 end
