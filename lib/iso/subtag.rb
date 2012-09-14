@@ -19,7 +19,7 @@ module ISO
     end
 
     def self.all
-      YAML.load_file(self::DEFINITIONS_FILE).map do |code, options|
+      @all ||= YAML.load_file(self::DEFINITIONS_FILE).map do |code, options|
         symbolized_options = {}
         options.keys.each { |key| symbolized_options[key.to_sym] = options[key] } if options
         new(code, symbolized_options)
