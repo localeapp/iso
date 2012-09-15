@@ -11,7 +11,7 @@ module ISO
     end
 
     def name
-      I18n.t(code, scope: i18n_scope)
+      I18n.t(code, :scope => i18n_scope)
     end
 
     def full_name
