@@ -20,6 +20,22 @@ describe ISO::Subtag do
     end
   end
 
+  describe "#name" do
+    let(:fake_region)  { ISO::Subtag.new('FR', name: 'This is a lie') }
+    let(:mars)  { ISO::Subtag.new('MRS') }
+
+    it 'will accept a name option' do
+      I18n.should_not_receive(:t)
+      fake_region.name.should == 'This is a lie'
+    end
+
+    it 'falls back to the translation' do
+      I18n.should_receive(:t).with('MRS', scope: 'vendor.iso').and_return('Mars')
+      mars.name.should == 'Mars'
+    end
+
+  end
+
   describe "#full_name" do
     it "is composed of the code and the name" do
       full_name = Subtag.find('fr').full_name
