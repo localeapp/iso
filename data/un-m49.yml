@@ -1,0 +1,271 @@
+# http://unstats.un.org/unsd/methods/m49/m49regin.htm
+---
+'002': Africa
+'004': AF
+'005': South America
+'008': AL
+'009': Oceania
+'011': Western Africa
+'012': DZ
+'013': Central America
+'014': Eastern Africa
+'015': Northern Africa
+'016': AS
+'017': Middle Africa
+'018': Southern Africa
+'019': Americas
+'020': AD
+'021': Northern Americab
+'024': AO
+'028': AG
+'029': Caribbean
+'030': Eastern Asia
+'031': AZ
+'032': AR
+'034': Southern Asia
+'035': South-Eastern Asia
+'036': AU
+'039': Southern Europe
+'040': AT
+'044': BS
+'048': BH
+'050': BD
+'051': AM
+'052': BB
+'053': Australia and New Zealand
+'054': Melanesia
+'056': BE
+'057': Micronesia
+'060': BM
+'061': Polynesia
+'064': BT
+'068': Bolivia (Plurinational State of)
+'070': BA
+'072': BW
+'076': BR
+'084': BZ
+'090': SB
+'092': British Virgin Islands
+'096': BN
+'100': BG
+'104': MM
+'108': BI
+'112': BY
+'116': KH
+'120': CM
+'124': CA
+'132': CV
+'136': KY
+'140': CF
+'142': Asia
+'143': Central Asia
+'144': LK
+'145': Western Asia
+'148': TD
+'150': Europe
+'151': Eastern Europe
+'152': CL
+'154': Northern Europe
+'155': Western Europe
+'156': CN
+'170': CO
+'174': KM
+'175': YT
+'178': CG
+'180': Democratic Republic of the Congo
+'184': CK
+'188': CR
+'191': HR
+'192': CU
+'196': CY
+'203': CZ
+'204': BJ
+'208': DK
+'212': DM
+'214': DO
+'218': EC
+'222': SV
+'226': GQ
+'231': ET
+'232': ER
+'233': EE
+'234': Faeroe Islands
+'238': FK
+'242': FJ
+'246': FI
+'248': land Islands
+'250': FR
+'254': GF
+'258': PF
+'262': DJ
+'266': GA
+'268': GE
+'270': GM
+'275': Occupied Palestinian Territory
+'276': DE
+'288': GH
+'292': GI
+'296': KI
+'300': GR
+'304': GL
+'308': GD
+'312': GP
+'316': GU
+'320': GT
+'324': GN
+'328': GY
+'332': HT
+'336': Holy See
+'340': HN
+'344': China, Hong Kong Special Administrative Region
+'348': HU
+'352': IS
+'356': IN
+'360': ID
+'364': Iran (Islamic Republic of)
+'368': IQ
+'372': IE
+'376': IL
+'380': IT
+'384': Cote dIvoire
+'388': JM
+'392': JP
+'398': KZ
+'400': JO
+'404': KE
+'408': Democratic Peoples Republic of Korea
+'410': Republic of Korea
+'414': KW
+'417': KG
+'418': Lao Peoples Democratic Republic
+'419': Latin America and the Caribbean
+'422': LB
+'426': LS
+'428': LV
+'430': LR
+'434': LY
+'438': LI
+'440': LT
+'442': LU
+'446': China, Macao Special Administrative Region
+'450': MG
+'454': MW
+'458': MY
+'462': MV
+'466': ML
+'470': MT
+'474': MQ
+'478': MR
+'480': MU
+'484': MX
+'492': MC
+'496': MN
+'498': Republic of Moldova
+'499': ME
+'500': MS
+'504': MA
+'508': MZ
+'512': OM
+'516': NA
+'520': NR
+'524': NP
+'528': NL
+'531': Curaao
+'533': AW
+'534': SX
+'535': Bonaire, Saint Eustatius and Saba
+'540': NC
+'548': VU
+'554': NZ
+'558': NI
+'562': NE
+'566': NG
+'570': NU
+'574': NF
+'578': 'NO'
+'580': MP
+'583': Micronesia (Federated States of)
+'584': MH
+'585': PW
+'586': PK
+'591': PA
+'598': PG
+'600': PY
+'604': PE
+'608': PH
+'612': PN
+'616': PL
+'620': PT
+'624': GW
+'626': TL
+'630': PR
+'634': QA
+'638': Runion
+'642': RO
+'643': RU
+'646': RW
+'652': Saint-Barthlemy
+'654': Saint Helena
+'659': KN
+'660': AI
+'662': LC
+'663': MF
+'666': PM
+'670': VC
+'674': SM
+'678': ST
+'680': Sark
+'682': SA
+'686': SN
+'688': RS
+'690': SC
+'694': SL
+'702': SG
+'703': SK
+'704': VN
+'705': SI
+'706': SO
+'710': ZA
+'716': ZW
+'724': ES
+'728': SS
+'729': SD
+'732': EH
+'740': SR
+'744': Svalbard and Jan Mayen Islands
+'748': SZ
+'752': SE
+'756': CH
+'760': SY
+'762': TJ
+'764': TH
+'768': TG
+'772': TK
+'776': TO
+'780': TT
+'784': AE
+'788': TN
+'792': TR
+'795': TM
+'796': TC
+'798': TV
+'800': UG
+'804': UA
+'807': The former Yugoslav Republic of Macedonia
+'818': EG
+'826': United Kingdom of Great Britain and Northern Ireland
+'830': Channel Islands
+'831': GG
+'832': JE
+'833': IM
+'834': United Republic of Tanzania
+'840': US
+'850': United States Virgin Islands
+'854': BF
+'858': UY
+'860': UZ
+'862': Venezuela (Bolivarian Republic of)
+'876': Wallis and Futuna Islands
+'882': WS
+'887': YE
+'894': ZM

@@ -4,6 +4,7 @@ module ISO
 
     def initialize(code, options={})
       @code = code
+      @options = options
     end
 
     def ==(object)
@@ -11,7 +12,7 @@ module ISO
     end
 
     def name
-      I18n.t(code, :scope => i18n_scope)
+      @options[:name] || I18n.t(code, :scope => i18n_scope)
     end
 
     def full_name
