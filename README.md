@@ -26,7 +26,16 @@ Regions are defined by **ISO 3166-1**; that is the 2 letter uppercase region cod
 	
 	=> #<ISO::Region:0x007fe2ba070e50
 			@code="MX",
-			@name="Mexico"> 
+			@name="Mexico">
+			
+Regions can also be defined by the **UN M49** standard; that is the 3 digit region code. 
+
+	> ISO::UN::Region.find('419')
+	
+	=> #<ISO::Region:0x007fe2ba43db50
+			@code="419",
+			@name="Latin America and the Caribbean">
+
 	
 ## Tags
 
@@ -46,8 +55,8 @@ The combination of a language and a region is called a Tag :
 				
 You can check if a Tag is valid like so :
 
-  > ISO::Tag.new('pt-BR').valid? => true
-  > ISO::Tag.new('lolcat').valid? => false
+	> ISO::Tag.new('pt-BR').valid? => true
+	> ISO::Tag.new('lolcat').valid? => false
 
 ## I18n
 
