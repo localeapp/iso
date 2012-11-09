@@ -15,21 +15,21 @@ describe ISO::Region do
     region.name.should == 'France'
   end
 
-  context 'un-m49 regions' do
-    let(:afghanistan_region) { ISO::Region.new('004') }
-    let(:africa_as_a_region) { ISO::Region.new('002') }
+  context "un-m49 regions" do
+    let(:iso_region)    { ISO::Region.new('004') }
+    let(:un_m49_region) { ISO::Region.new('002') }
 
-    it 'takes an un-m49 code and returns an instance' do
-      afghanistan_region.should be_a(ISO::Region)
+    it "takes an un-m49 code and returns an instance of ISO::Region" do
+      iso_region.should be_a(ISO::Region)
     end
 
-    it 'replaces the un-m49 code with the country code' do
-      afghanistan_region.code.should == 'AF'
+    it "replaces the un-m49 code with the country code" do
+      iso_region.code.should == 'AF'
     end
 
-    it 'preserves the un-m49 code if it represents a region greater than a country' do
-      africa_as_a_region.code.should == '002'
-      africa_as_a_region.name.should == 'Africa'
+    it "preserves the un-m49 code if there is no iso-3166-1 equivalent" do
+      un_m49_region.code.should == '002'
+      un_m49_region.name.should == 'Africa'
     end
   end
 
