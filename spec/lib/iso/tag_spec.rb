@@ -8,6 +8,12 @@ describe ISO::Tag do
       tag.region.code.should   == 'MX'
     end
 
+    it "returns a tag containing the language and UN region" do
+      tag = ISO::Tag.new('en-419')
+      tag.language.code.should == 'en'
+      tag.region.code.should   == '419'
+    end
+
     it "returns a tag containing the language only" do
       tag = ISO::Tag.new('en-XXXXXX')
       tag.language.code.should == 'en'
@@ -18,6 +24,12 @@ describe ISO::Tag do
       tag = ISO::Tag.new('gsw-CH')
       tag.language.should be_nil
       tag.region.code.should == 'CH'
+    end
+    
+    it "returns a tag containing the UN region only" do
+      tag = ISO::Tag.new('gsw-419')
+      tag.language.should be_nil
+      tag.region.code.should == '419'
     end
 
     it "returns a tag containing no language or region" do
@@ -62,6 +74,10 @@ describe ISO::Tag do
       ISO::Tag.new('da-AT').should be_valid
     end
 
+    it "returns true when a valid language an UN region are supplied" do
+      ISO::Tag.new('es-419').should be_valid
+    end
+
     it "returns false when no code is supplied" do
       ISO::Tag.new('').should_not be_valid
     end
@@ -73,5 +89,6 @@ describe ISO::Tag do
     it "returns false when supplied region is invalid" do
       ISO::Tag.new('en-lol').should_not be_valid
     end
+
   end
 end

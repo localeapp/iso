@@ -5,7 +5,7 @@ module ISO
     def initialize(code)
       @code     = code
       @language = Language.identify(code)
-      @region   = Region.identify(code)
+      @region   = Region.identify(code) || UN::Region.identify(code)
     end
 
     def codes
