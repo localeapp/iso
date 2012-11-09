@@ -15,24 +15,6 @@ describe ISO::Region do
     region.name.should == 'France'
   end
 
-  context "un-m49 regions" do
-    let(:iso_region)    { ISO::Region.new('004') }
-    let(:un_m49_region) { ISO::Region.new('002') }
-
-    it "takes an un-m49 code and returns an instance of ISO::Region" do
-      iso_region.should be_a(ISO::Region)
-    end
-
-    it "replaces the un-m49 code with the country code" do
-      iso_region.code.should == 'AF'
-    end
-
-    it "preserves the un-m49 code if there is no iso-3166-1 equivalent" do
-      un_m49_region.code.should == '002'
-      un_m49_region.name.should == 'Africa'
-    end
-  end
-
   describe ".identify(full_code)" do
     it "identifies from 'fr-CH'" do
       ISO::Region.identify('fr-CH').should == ISO::Region.find('CH')
