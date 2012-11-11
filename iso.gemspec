@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{iso}
-  s.version = "0.1.1"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Christopher Dell}]
-  s.date = %q{2012-10-25}
+  s.date = %q{2012-11-11}
   s.description = %q{A subset of the ISO spec implemented in ruby}
   s.email = %q{chris@tigrish.com}
   s.extra_rdoc_files = [
@@ -28,12 +28,14 @@ Gem::Specification.new do |s|
     "VERSION",
     "data/iso-3166-1.yml",
     "data/iso-639-1.yml",
+    "data/un-m49.yml",
     "iso.gemspec",
     "lib/iso.rb",
     "lib/iso/language.rb",
     "lib/iso/region.rb",
     "lib/iso/subtag.rb",
     "lib/iso/tag.rb",
+    "lib/iso/un/region.rb",
     "locales/en.yml",
     "locales/fr.yml",
     "spec/fixtures/base.yml",
@@ -41,6 +43,7 @@ Gem::Specification.new do |s|
     "spec/lib/iso/region_spec.rb",
     "spec/lib/iso/subtag_spec.rb",
     "spec/lib/iso/tag_spec.rb",
+    "spec/lib/iso/un/region_spec.rb",
     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/tigrish/iso}
