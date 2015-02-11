@@ -1,3 +1,5 @@
+require 'yaml'
+
 module ISO
   class Subtag
     attr_reader :code
