@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Christopher Dell"]
-  s.date = "2015-06-21"
+  s.date = "2016-07-13"
   s.description = "A subset of the ISO spec implemented in ruby"
   s.email = "chris@tigrish.com"
   s.extra_rdoc_files = [
