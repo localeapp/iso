@@ -4,90 +4,90 @@ describe ISO::Tag do
   describe ".new(code)" do
     it "returns a tag containing the language and region" do
       tag = ISO::Tag.new('en-MX')
-      tag.language.code.should == 'en'
-      tag.region.code.should   == 'MX'
+      expect(tag.language.code).to eq 'en'
+      expect(tag.region.code).to eq 'MX'
     end
 
     it "returns a tag containing the language and UN region" do
       tag = ISO::Tag.new('en-419')
-      tag.language.code.should == 'en'
-      tag.region.code.should   == '419'
+      expect(tag.language.code).to eq 'en'
+      expect(tag.region.code).to eq '419'
     end
 
     it "returns a tag containing the language only" do
       tag = ISO::Tag.new('en-XXXXXX')
-      tag.language.code.should == 'en'
-      tag.region.should be_nil
+      expect(tag.language.code).to eq 'en'
+      expect(tag.region).to be_nil
     end
 
     it "returns a tag containing the region only" do
       tag = ISO::Tag.new('gsw-CH')
-      tag.language.should be_nil
-      tag.region.code.should == 'CH'
+      expect(tag.language).to be_nil
+      expect(tag.region.code).to eq 'CH'
     end
-    
+
     it "returns a tag containing the UN region only" do
       tag = ISO::Tag.new('gsw-419')
-      tag.language.should be_nil
-      tag.region.code.should == '419'
+      expect(tag.language).to be_nil
+      expect(tag.region.code).to eq '419'
     end
 
     it "returns a tag containing no language or region" do
       tag = ISO::Tag.new('csb-XXXXXX')
-      tag.language.should be_nil
-      tag.region.should be_nil
+      expect(tag.language).to be_nil
+      expect(tag.region).to be_nil
     end
   end
 
   describe "#codes" do
     it "returns an array containing each subtag's code" do
-      ISO::Tag.new('en-US').codes.should == %w(en US)
+      expect(ISO::Tag.new('en-US').codes).to eq %w(en US)
     end
   end
 
   describe "#subtags" do
     it "returns an array containing the language" do
       tag = ISO::Tag.new('fr')
-      tag.subtags.size.should == 1
-      tag.subtags.first.should be_kind_of(ISO::Language)
-      tag.subtags.first.code.should == 'fr'
+      expect(tag.subtags.size).to eq 1
+      expect(tag.subtags.first).to be_kind_of(ISO::Language)
+      expect(tag.subtags.first.code).to eq 'fr'
     end
 
     it "returns an array containing the language and the region" do
       tag = ISO::Tag.new('fr-CH')
-      tag.subtags.size.should == 2
+      expect(tag.subtags.size).to eq 2
 
-      tag.subtags.first.should be_kind_of(ISO::Language)
-      tag.subtags.first.code.should == 'fr'
+      expect(tag.subtags.first).to be_kind_of(ISO::Language)
+      expect(tag.subtags.first.code).to eq 'fr'
 
-      tag.subtags.last.should be_kind_of(ISO::Region)
-      tag.subtags.last.code.should == 'CH'
+      expect(tag.subtags.last).to be_kind_of(ISO::Region)
+      expect(tag.subtags.last.code).to eq 'CH'
     end
   end
 
   describe "#valid?" do
     it "returns true when a valid language is supplied" do
-      ISO::Tag.new('da').should be_valid
+      expect(ISO::Tag.new('da')).to be_valid
     end
 
     it "returns true when a valid language and region are supplied" do
-      ISO::Tag.new('da-AT').should be_valid
+      expect(ISO::Tag.new('da-AT')).to be_valid
     end
 
     it "returns true when a valid language an UN region are supplied" do
-      ISO::Tag.new('es-419').should be_valid
+      expect(ISO::Tag.new('es-419')).to be_valid
     end
 
     it "returns false when no code is supplied" do
-      ISO::Tag.new('').should_not be_valid
+      expect(ISO::Tag.new('')).to_not be_valid
     end
 
     it "returns false when supplied language is invalid" do
-      ISO::Tag.new('lol').should_not be_valid
+      expect(ISO::Tag.new('lol')).to_not be_valid
     end
 
     it "returns false when supplied region is invalid" do
-      ISO::Tag.new('en-lol').should_not be_valid
+      expect(ISO::Tag.new('en-lol')).to_not be_valid
     end
 
   end

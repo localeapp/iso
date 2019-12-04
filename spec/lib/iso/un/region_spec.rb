@@ -6,33 +6,33 @@ describe ISO::UN::Region do
 
   describe "#iso_code" do
     it "returns the corresponding iso code" do
-      has_iso.iso_code.should == 'AF'
+      expect(has_iso.iso_code).to eq 'AF'
     end
 
     it "returns nil when there is no corresponding iso code" do
-      no_iso.iso_code.should be_nil
+      expect(no_iso.iso_code).to be_nil
     end
   end
 
   describe "#name" do
     it "uses the correct scope when there is an iso code" do
-      has_iso.name.should == 'Afghanistan'
+      expect(has_iso.name).to eq 'Afghanistan'
     end
 
     it "uses the correct scope when there is no iso code" do
-      no_iso.name.should == 'Africa'
+      expect(no_iso.name).to eq 'Africa'
     end
   end
 
   describe ".identify(full_code)" do
     it "identifies from 'es-419'" do
       region = ISO::UN::Region.identify('es-419')
-      region.should_not be_nil
-      region.should == ISO::UN::Region.find('419')
+      expect(region).to_not be_nil
+      expect(region).to eq ISO::UN::Region.find('419')
     end
 
     it "returns nil when it can't identify" do
-      ISO::UN::Region.identify('gsw').should be_nil
+      expect(ISO::UN::Region.identify('gsw')).to be_nil
     end
   end
 end
