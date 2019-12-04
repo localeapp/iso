@@ -1,6 +1,6 @@
 # iso
 
-[![Build Status](https://secure.travis-ci.org/tigrish/iso.png)](http://travis-ci.org/tigrish/iso)
+[![Build Status](https://travis-ci.org/Locale/iso.svg?branch=master)](https://travis-ci.org/Locale/iso)
 
 This project is a ruby implementation of ISO 639-1 alpha2 and ISO 3166-1. It includes definitions of all two letter language and region codes.
 
