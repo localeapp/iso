@@ -94,6 +94,7 @@ hr:
 ht:
 hu:
   plural_rule_names:
+    - one
     - other
 hy:
 hz:
