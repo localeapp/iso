@@ -1,0 +1,12 @@
+before_install:
+  - gem install bundler
+language: ruby
+rvm:
+  - 2.6
+  - 2.5
+  - 2.4
+  - 2.3
+notifications:
+  slack:
+    if: branch = master
+    secure: dPiP4+6xO6L9/RfXyivr2X2UohSD8CDdnnY57BvNgGVvFtQ2LUP9s1mDxj7gbBGhRZJzTMZlM/PU7bT9O9JCJPcpUs4dWg748KZ0ZGOslnv8yfzNbRh9U5OzyEjch2PFkEhpQPnuVCiof+ahjfxQQSkokpsbNa9DLlDmUapXFPY=
