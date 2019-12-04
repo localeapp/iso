@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{A ruby implementation of ISO}
   gem.description = %Q{A subset of the ISO spec implemented in ruby}
   gem.email = "chris@tigrish.com"
-  gem.authors = ["Christopher Dell"]
+  gem.authors = ["Christopher Dell", "Thibault Dalban"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
