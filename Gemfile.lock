@@ -55,7 +55,7 @@ GEM
       rake
       rdoc
       semver2
-    json (2.2.0)
+    json (2.3.1)
     jwt (2.2.1)
     listen (3.2.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
