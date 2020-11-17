@@ -191,6 +191,10 @@ om:
 or:
 os:
 pa:
+pap:
+  plural_rule_names:
+    - one
+    - other
 pi:
 pl:
   plural_rule_names:
