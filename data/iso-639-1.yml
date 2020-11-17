@@ -49,8 +49,10 @@ cu:
 cv:
 cy:
   plural_rule_names:
+    - zero
     - one
     - two
+    - few
     - many
     - other
 da:
