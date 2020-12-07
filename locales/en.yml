@@ -250,6 +250,7 @@ en:
         BM: Bermuda
         BT: Bhutan
         BO: Bolivia
+        BQ: Bonaire, Sint Eustatius and Saba
         BA: Bosnia and Herzegovina
         BW: Botswana
         BV: Bouvet Island
@@ -378,7 +379,6 @@ en:
         NR: Nauru
         NP: Nepal
         NL: Netherlands
-        AN: Netherlands Antilles
         NC: New Caledonia
         NZ: New Zealand
         NI: Nicaragua
@@ -424,6 +424,7 @@ en:
         SG: Singapore
         SK: Slovakia
         SI: Slovenia
+        SX: Sint Maarten
         SB: Solomon Islands
         SO: Somalia
         ZA: South Africa
@@ -467,6 +468,7 @@ en:
         VI: Virgin Islands (U.S.)
         WF: Wallis and Futuna
         EH: Western Sahara
+        XK: Kosovo
         YE: Yemen
         ZM: Zambia
         ZW: Zimbabwe
